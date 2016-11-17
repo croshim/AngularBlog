@@ -1,0 +1,10 @@
+<div ng-if="$ctrl.posts.length">
+  <div ng-repeat="post in $ctrl.posts">
+    <span ng-bind="post.title"></span>
+    <button ng-click="$ctrl.remove(post.id)">Remove</button>
+    <a ui-sref="post({ id: post.id })">details</a>
+  </div>
+</div>
+<div ng-if="!$ctrl.posts.length">
+  Please add some posts!
+</div>

@@ -1,0 +1,13 @@
+<div>
+  <form name="PostForm" ng-submit="$ctrl.create(PostForm)">
+    <p>
+      <input type="text" name="title" ng-model="$ctrl.post.title" ng-required="true">
+    </p>
+    <p>
+      <textarea name="body" ng-model="$ctrl.post.body" ng-required="true"></textarea>
+    </p>
+    <p>
+      <input type="submit" name="submit" value="Create" ng-disabled="PostForm.$invalid">
+    </p>
+  </form>
+</div>

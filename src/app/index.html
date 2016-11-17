@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Awesome Blog</title>
+  <meta name="description" content="Awesome Blog">
+  <meta name="author" content="Andrei">
+</head>
+<body ng-app="Blog" >
+  <ul>
+    <li>
+      <a ui-sref="posts">Posts</a>
+    </li>
+    <li>
+      <a ui-sref="new-post">Create Post</a>
+    </li>
+  </ul>
+  <div ui-view></div>
+
+  <script src="./angular.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
